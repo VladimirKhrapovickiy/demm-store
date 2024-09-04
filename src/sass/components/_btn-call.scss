@@ -1,0 +1,16 @@
+.order_call{
+    padding: rem(15px) rem(27px);
+    background-color: $color-blue;
+    color: $color-white;
+    line-height: 145%;
+    border-radius: 60px;
+    text-wrap: nowrap;
+    font-weight: 600;
+    &:hover{
+        background-color: $color-blue-light;
+    }
+    &:active{
+        background-color: $color-blue-dark;
+    }
+
+}

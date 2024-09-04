@@ -1,0 +1,9 @@
+.link-beige{
+    color:$color-beige-light;
+    &:active{
+        color:$color-beige;
+    }
+    &:hover{
+        color:$color-beige
+    }
+}

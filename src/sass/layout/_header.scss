@@ -1,0 +1,140 @@
+.header{
+    .menu-top{
+        background-color:$color-gray-light;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: rem(8px) rem(152px);
+        color: $color-blue;
+        font-size: rem(15px);
+        line-height: 135%;
+        &__list{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item{
+            list-style: none;;
+            &:not(:last-child){
+                margin-right: rem(40px);
+            }
+            &:hover{
+                color:$color-blue-light;
+            }
+        }
+        &__personal_account{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .accaunt_ico{
+                width: rem(22px);
+                height: 22px;
+                margin-right: rem(5px);
+            }
+
+            p{
+                &:hover{
+                    color:$color-blue-light;
+                }
+            }
+        }
+    }
+    .mid{
+        display: flex;
+        padding: rem(8px) rem(152px);
+        flex-direction: row;
+        align-items: center;
+        .logo{
+            width: rem(138px);
+            height: rem(84px);
+            margin-right: 40px;
+        }
+        .search_bar{
+            position: relative;
+            width: 100%;
+            margin-right: rem(54px);
+            &__input{
+                width: 100%;
+                height: rem(50px);
+                border-radius: 60px;
+                border:1px solid $color-gray-dark;
+                padding-left: 20px;
+                background-color:$color-gray-light;
+            }
+            &__ico{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .contacts{
+            margin-right: rem(20px);
+            min-width: rem(194px);
+            &__phone{
+                color: $color-blue;
+                font-size: rem(22px);
+                line-height: 135%;
+                letter-spacing: -4%;
+                &:hover{
+                    color:$color-blue-light;
+                }
+            }
+        }
+    }
+    .menu-bot{
+        background-color: $color-blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 rem(152px);
+        max-height: rem(50px);
+        color:$color-white;
+        &__list{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: center;
+
+        }&__item{
+            height: 100%;
+            padding: rem(13px) rem(20px);
+            text-align: center;
+            &:first-child{
+                background-color:$color-beige-light;
+                padding: rem(15px) rem(40px);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                img{
+                    margin-right: rem(9px);
+                }
+            }
+        }
+        &__cart{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .ico-container{
+                position: relative;
+                .cart_ico{
+                    width: rem(29px);
+                    height: rem(27px);
+                    margin-right: rem(8px);
+                }
+                .goods_count{
+                    background-color:$color-beige-light;
+                    border-radius:100%;
+                    width: rem(15px);
+                    height: rem(15px);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: rem(10px);
+                    font-weight: 600;
+                    text-align: center;
+                    line-height: 180%;
+                }
+            }
+        }
+    }
+}
