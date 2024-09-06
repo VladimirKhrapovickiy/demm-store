@@ -1,0 +1,33 @@
+.cart{
+    background-color:$color-gray-light;
+    border: 1px solid $color-gray-dark;
+    border-radius: 50%;
+    cursor: pointer;
+    .ico-container{
+        position: relative;
+        width: rem(50px);
+        height: rem(50px);
+        .cart_ico{
+            width: rem(29px);
+            height: rem(27px);
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-60%);
+        }
+        .goods_count{
+            background-color:$color-beige-light;
+            border-radius:100%;
+            width: rem(17px);
+            height: rem(17px);
+            position: absolute;
+            top: 15%;
+            right: 15%;
+            font-size: rem(10px);
+            font-weight: 600;
+            text-align: center;
+            line-height: 180%;
+            color:$color-white;
+        }
+    }
+}

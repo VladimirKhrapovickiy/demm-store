@@ -1,22 +1,37 @@
 @mixin respond($breakpoint){
+
+    @if($breakpoint == min-phone){
+      @media only screen and (max-width:490px){
+        @content;
+      }
+    }
     @if($breakpoint == phone){
-      @media only screen and (max-width:600px){
+      @media only screen and (max-width:690px){
         @content;
       }
     }
     @if($breakpoint == tab-port){
-      @media only screen and (max-width:900px){
+      @media only screen and (max-width:950px){
         @content;
       }
     }
     @if($breakpoint == tab-lend){
-      @media only screen and (max-width:1245px){
+      @media only screen and (max-width:1248px){
         @content;
       }
     }
     @if($breakpoint == big-screen){
-      @media only screen and (min-width:1800px){
+      @media only screen and (max-width:1600px){
         @content;
       }
     }
+  }
+  @mixin respPadding($top , $bottom){
+    padding: $top rem(152px) $bottom;
+    @include respond(big-screen){
+      padding: $top rem(152px) $bottom;
+    }
+  @include respond(tab-lend){
+    padding: $top rem(20px) $bottom;
+   }
   }

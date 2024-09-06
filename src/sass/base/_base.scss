@@ -7,11 +7,17 @@ a, a:active, a:hover{
     text-decoration: none;
     }
 html{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: rem(14px)
+}
+html{
     @include respond(big-screen){
-        font-size: 110%;
+        font-size: 90%;
     }
     @include respond(tab-lend){
-        font-size: 90%;
+        font-size: 85%;
     }
     @include respond(tab-port){
         font-size: 80%;
@@ -19,11 +25,4 @@ html{
     @include respond(phone){
         font-size: 70%;
     }
-}
-html{
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 155%;
-    font-size: rem(14px)
 }

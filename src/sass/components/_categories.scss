@@ -1,11 +1,18 @@
 .categories{
-    padding: rem(80px) rem(152px);
+    @include respPadding(rem(80px), rem(80px));
 
     &__container{
         display: grid;
-        grid-template-rows: repeat(12, rem(39px));
+        grid-template-rows: repeat(12, rem(32px));
         grid-template-columns: repeat(12, 1fr);
         grid-gap: rem(24px);
+        @include respond(tab-port){
+            grid-template-rows: repeat(19, rem(28px));
+        }
+        @include respond(min-phone){
+            grid-template-rows: repeat(5, rem(300px));
+            grid-template-columns: 1fr;
+        }
     }
     .category-1{
         background-image:linear-gradient(180deg, rgba(31,44,73,0) 10%, rgba(31,44,73,0.9) 100%), url(../../img/categories_1.png);
@@ -13,34 +20,90 @@
         background-size: cover;
         grid-column: 1 / 4;
         grid-row: 1 / 7;
+        @include respond(tab-port){
+            grid-column: 1 / 5;
+            grid-row: 1 / 7;
+        }
+        @include respond(phone){
+            grid-column: 1 / 6;
+        }
+        @include respond(min-phone){
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
     }
     .category-2{
         background-image:linear-gradient(180deg, rgba(31,44,73,0) 10%, rgba(31,44,73,0.9) 100%), url(../../img/categories_2.png);
         background-repeat: no-repeat;
         background-size: cover;
-        grid-column: 4 / 10;
+        grid-column: 4 / 9;
         grid-row: 1 / 7;
+        @include respond(tab-port){
+            grid-column: 5 / -1;
+            grid-row: 1 / 7;
+        }
+        @include respond(phone){
+            grid-column: 6 / -1;
+
+        }
+        @include respond(min-phone){
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
     }
     .category-3{
         background-image:linear-gradient(180deg, rgba(31,44,73,0) 10%, rgba(31,44,73,0.9) 100%), url(../../img/categories_3.png);
         background-repeat: no-repeat;
         background-size: cover;
-        grid-column: 10 / -1;
+        grid-column: 9 / -1;
         grid-row: 1 / -1;
+        @include respond(tab-port){
+            grid-column: 1 / -1;
+            grid-row: 13 / -1;
+        }
+        @include respond(min-phone){
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
     }
     .category-4{
         background-image:linear-gradient(180deg, rgba(31,44,73,0) 10%, rgba(31,44,73,0.9) 100%), url(../../img/categories_4.png);
         background-repeat: no-repeat;
         background-size: cover;
-        grid-column: 1 / 7;
+        grid-column: 1 / 6;
         grid-row: 7 / -1;
+        @include respond(tab-port){
+            grid-column: 1 / 9;
+            grid-row: 7 / 13;
+        }
+        @include respond(phone){
+            grid-column: 1 / 8;
+
+        }
+        @include respond(min-phone){
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
     }
     .category-5{
         background-image:linear-gradient(180deg, rgba(31,44,73,0) 10%, rgba(31,44,73,0.9) 100%), url(../../img/categories_5.png);
         background-repeat: no-repeat;
         background-size: cover;
-        grid-column: 7 / 10;
+        grid-column: 6 / 9;
         grid-row: 7 / -1;
+        @include respond(tab-port){
+            grid-column: 9 / -1;
+            grid-row: 7 / 13;
+        }
+        @include respond(phone){
+            grid-column: 8 / -1;
+
+        }
+        @include respond(min-phone){
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+        }
     }
     &__item{
         border-radius: 15px;
@@ -50,11 +113,13 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: end;
-        
+        @include respond(tab-lend){
+            padding: 0 rem(15px) rem(30px) rem(15px);
+        }
     }
     &__name{
         color: $color-white;
-        font-size: 24px;
+        font-size: rem(24px);
         font-weight: 600;
     }
     &__button{
@@ -68,7 +133,7 @@
         align-items: center;
         justify-content: center;
         font-size: rem(24px);
-        transform: translateY(25%);
+        transform: translateY(15%);
         z-index: 2;
         transition: all 0.5s;
         cursor: pointer;

@@ -2,8 +2,8 @@
     background-image:linear-gradient(160deg, rgba(31,44,73,0.4) 32%, rgba(31,44,73,0.7) 100%), url('../../img/feedback.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 rem(152px) rem(80px) rem(152px);
     max-width: 100%;
+    @include respPadding(0, rem(80px));
     &__company-logo{
         padding: rem(15px) rem(10px) rem(10px) rem(10px);
         width: fit-content;
@@ -29,6 +29,11 @@
     }
     &__form{
         max-width: rem(567px);
+        @include respond(min-phone){
+            max-width: 100%;
+            display:flex;
+            flex-direction: column;
+        }
     }
     &__input{
         background-color: transparent;
@@ -39,8 +44,14 @@
         padding-bottom: rem(15px);
         margin-right: rem(20px);
         margin-bottom: rem(20px);
+        outline:none;
         &::placeholder{
             color: rgb($color-white, 0.7);
+        }
+ 
+        @include respond(min-phone){
+            max-width: 100%;
+            display: inline-block;
         }
     }
     &__checkbox-container{
@@ -61,6 +72,7 @@
     }
     &__btn{
         background-color:$color-beige-light;
+        max-width: fit-content;
         &:hover{
             background-color:$color-beige-dark;
         }
