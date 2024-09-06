@@ -12,7 +12,11 @@
 @import "./layout/sidebar.scss";
 @import "./layout/footer";
     
-@import "./components/btn-call";
+@import "./components/btns";
 @import "./components/main-banner";
+@import "./components/categories";
+@import "./components/promotions";
+@import "./components/about";
+@import "./components/feedback";
 
 @import "./pages/home";

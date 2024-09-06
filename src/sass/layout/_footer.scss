@@ -1,0 +1,122 @@
+.footer{
+    background-color:$color-white;
+    &__container{
+        padding: rem(80px) rem(152px);
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: repeat(4, minmax(min-content, 1fr));
+
+    }
+    .logo{
+        width: rem(160px);
+        height: rem(97px);
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-bottom: rem(57px);
+    }
+    .whats-up{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: rem(249px);
+        height: rem(60px);
+        color: $color-blue;
+        font-size: rem(14px);
+        line-height: 135%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $color-gray-light;
+        border: 1px solid $color-gray-dark;
+        margin-right: rem(113px);
+        .whats-up-ico{
+            width: rem(20px);
+            height: rem(20px);
+            margin-right: rem(6px);
+        }
+    }
+    .catalog-menu{
+        grid-row: 1/-1;
+        grid-column: 2/3;
+
+    }
+    .menu{
+        &__title{
+            color: rgba($color-blue, 0.5);
+            margin-bottom: rem(30px);
+        }
+        &__list{
+            list-style: none;
+            text-wrap: nowrap;
+        }
+        &__item{
+            color:rgba($color-blue, 0.8); 
+            &:hover{
+                color:rgba($color-blue-light, 0.8); 
+            }
+            &:active{
+                color:rgba($color-blue-dark, 0.8); 
+            }
+            &:not(:last-child){
+                margin-bottom: rem(15px);
+            }
+        }
+    }
+    .client-menu{
+        grid-row: 1 /-1;
+        grid-column: 3/4;
+    }
+    .footer-form{
+        grid-row: 1/2;
+        grid-column: 4/5;
+        &__text{
+            color: $color-blue;
+            font-size: rem(18px);
+            line-height: 135%;
+            letter-spacing: -1px;
+            margin-bottom: rem(20px);
+        }
+        &__input-container{
+            position: relative;
+        }
+        &__input{
+            background-color: $color-gray-light;
+            border: 1px solid $color-gray-dark;
+            height: rem(60px);
+            border-radius:60px;
+            padding-left: rem(20px);
+            width: 100%;
+            &:focus{
+                border: 1px solid $color-blue-light;
+            }
+        }
+        &__btn{
+           position: absolute; 
+           height: rem(60px);
+           right: 0;
+        }
+    }
+    .contacts{
+        grid-row: 2/3;
+        grid-column: 4/5;
+        &__phone{
+            font-size: rem(29px);
+            color: $color-blue;
+            letter-spacing: -1px;
+            line-height: 135%;
+            margin-bottom: rme(7px);
+        }
+        &__adress{
+            color:rgba($color-blue-light, 0.8);
+            font-size: rem(15px);
+            line-height: 135%;
+            display: flex;
+            flex-direction: row;
+
+        }
+        &__location-ico{
+            margin-right: rem(8px);
+            width: ree(10px);
+            height: rem(12px);
+        }
+    }
+}

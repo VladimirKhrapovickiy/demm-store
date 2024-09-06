@@ -21,6 +21,11 @@
                 color:$color-blue-light;
             }
         }
+        &__link{
+            &:active{
+                color:$color-blue-light;
+            }
+        }
         &__personal_account{
             display: flex;
             flex-direction: row;
@@ -95,18 +100,31 @@
             list-style: none;
             align-items: center;
 
-        }&__item{
-            height: 100%;
+        }
+        &__link{
+            display: inline-block;
+            color:$color-white;
             padding: rem(13px) rem(20px);
+            &:hover{
+                background-color:$color-blue-light;
+            }
+        }
+        &__item{
+            height: 100%;
             text-align: center;
             &:first-child{
                 background-color:$color-beige-light;
-                padding: rem(15px) rem(40px);
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 img{
                     margin-right: rem(9px);
+                }
+                .menu-bot__link{
+                    padding: rem(12px) rem(40px);
+                    &:hover{
+                        background-color:$color-beige-dark;
+                    }
                 }
             }
         }

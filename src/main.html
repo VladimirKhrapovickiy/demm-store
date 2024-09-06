@@ -14,10 +14,10 @@
     <header class="header">
         <nav class="menu-top">
             <ul class="menu-top__list">
-                <li class="menu-top__item">О компании</li>
-                <li class="menu-top__item">Оплата и доставка</li>
-                <li class="menu-top__item">Магазины</li>
-                <li class="menu-top__item">Контакты</li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">О компании</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Оплата и доставка</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Магазины</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Контакты</a></li>
             </ul>
             <div class="menu-top__personal_account">
                 <img src="../icons/user.svg" alt="пользователь" class="accaunt_ico">
@@ -25,7 +25,7 @@
             </div>
         </nav>
         <div class="mid">
-            <img src="./img/logo_main.png" alt="" class="logo">
+            <a href="#"><img src="./img/logo_main.png" alt="" class="logo"></a>
             <div class="search_bar">
                 <input type="text" class="search_bar__input" id="search_bar__input" placeholder="Поиск по сайту...">
                 <img src="../icons/search.svg" alt="увеличительное стекло" class="search_bar__ico">
@@ -34,16 +34,16 @@
                 <p class="contacts__phone">+7 999 999-99-99</p>
                 <p class="contacts__working-hours">Звоните с 8:10 до 18:10</p>
             </div>
-            <button class="order_call">Заказать звонок</button>
+            <button class="btn order_call">Заказать звонок</button>
         </div>
         <nav class="menu-bot">
             <ul class="menu-bot__list">
-                <li class="menu-bot__item"><img src="../icons/sale.svg" alt="скидка"><p>Акции</p></li>
-                <li class="menu-bot__item">Смесители</li>
-                <li class="menu-bot__item">Душевые системы</li>
-                <li class="menu-bot__item">Душевые стойки</li>
-                <li class="menu-bot__item">Изливы</li>
-                <li class="menu-bot__item">Аксессуары</li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link"><img src="../icons/sale.svg" alt="скидка">Акции</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Смесители</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Душевые системы</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Душевые стойки</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Изливы</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Аксессуары</a></li>
             </ul>
             <div class="menu-bot__cart">
                 <div class="ico-container"><img src="../icons/cart.svg" alt="корзина" class="cart_ico"><div class="goods_count">0</div></div>
@@ -64,24 +64,134 @@
             </div>
         </section>
         <section class="categories">
-
+            <div class="categories__container">
+                <div class="categories__item category-1">
+                    <p class="categories__name">Смесители</p>
+                    <div class="categories__button"><a href="#" class="categories__link"></a>›</div>
+                </div>
+                <div class="categories__item category-2">
+                    <p class="categories__name">Душевые системы</p>
+                    <div class="categories__button"><a href="#" class="categories__link"></a>›</div>
+                    
+                </div>
+                <div class="categories__item category-3">
+                    <p class="categories__name">Душевые стойки</p>
+                    <div class="categories__button"><a href="#" class="categories__link"></a>›</div>
+                </div>
+                <div class="categories__item category-4">
+                    <p class="categories__name">Изливы</p>
+                    <div class="categories__button"><a href="#" class="categories__link"></a>›</div>
+                </div>
+                <div class="categories__item category-5">
+                    <p class="categories__name">Аксессуары</p>
+                    <div class="categories__button"><a href="#" class="categories__link"></a>›</div>
+                </div>
+            </div>
         </section>
         <section class="promotions">
-
+            <div class="promotions__container-top">
+                <h2 class="promotions__title-main">Актуальные акции</h2>
+                <button class="btn promotions__button">Все акции ›</button>
+            </div>
+            <div class="promotions__container-main">
+                <div class="promotions__item">
+                    <img src="./img/promotions_1.png" alt="скидка 15%" class="promotions__img">
+                    <p class="promotions__date">Акция действует до 11.11.2023 </p>
+                    <h3 class="promotions__title">Скидка 15% на все смесители</h3>
+                    <p class="promotions__text">Предлагаем смесители для кухни, ванны, душа по низким ценам! Акция действует только на товары в наличии.</p>
+                    <a href="" class="promotions__link">Подробнее ›</a>
+                </div>
+                <div class="promotions__item">
+                    <img src="./img/promotions_2.png" alt="распродажа" class="promotions__img">
+                    <p class="promotions__date">Акция действует до 30.11.2023 </p>
+                    <h3 class="promotions__title">Осенняя распродажа сантехнических аксессуаров для ванной комнаты</h3>
+                    <p class="promotions__text">Большой выбор аксессуаров для ванной со скидками до 40%. Товары со скидкой отмечены в каталоге красной табличкой SALE.</p>
+                    <a href="" class="promotions__link">Подробнее ›</a>
+                </div>
+                <div class="promotions__item">
+                    <img src="./img/promotions_3.png" alt="скидки" class="promotions__img">
+                    <p class="promotions__date">Акция действует до 31.12.2023 </p>
+                    <h3 class="promotions__title">Душевые системы по выгодным ценам!</h3>
+                    <p class="promotions__text">Душевые системы, стойки и гарнитуры по выгодным ценам. Доставка в любой регион России. Гарантия от производителя.</p>
+                    <a href="" class="promotions__link">Подробнее ›</a>
+                </div>
+                <div class="promotions__item">
+                    <img src="./img/promotions_1.png" alt="скидка 15%" class="promotions__img">
+                    <p class="promotions__date">Акция действует до 11.11.2023 </p>
+                    <h3 class="promotions__title">Скидка 15% на все смесители</h3>
+                    <p class="promotions__text">Предлагаем смесители для кухни, ванны, душа по низким ценам! Акция действует только на товары в наличии.</p>
+                    <a href="" class="promotions__link">Подробнее ›</a>
+                </div>
+            </div>
         </section>
         <section class="about">
-
+            <div class="about__container">
+                <img src="./img/about-1.png" alt="инженер за работой" class="about__img-1">
+                <img src="./img/about-2.png" alt="главное здание компании" class="about__img-2">
+                <div class="about__info-1">
+                    <h2 class="about__title-second">О компании</h2>
+                    <p class="about__text">Компания DEMM, созданная в Марментино, провинция Брешиа, работает в сфере производства кранов и ванных комнат в течение последних 50 лет. Компания DEMM постоянно инвестирует в исследования и разработку новых продуктов с целью обеспечения максимальной эффективности при одновременном обеспечении качества и дизайна.</p>
+                </div>
+                <div class="about__info-2">
+                    <h3 class="about__title-third">«Гарантируем высочайшую безопасность и надёжность в соответствии с международными стандартами качества»</h3>
+                    <p class="about__text">Мы производим обширную коллекцию изысканных и современных смесителей и душевых кабин. Изготавливаем продукцию в очень короткие сроки. Мы динамичны, дружелюбны и всегда рады сотрудничеству!</p>
+                </div>
+                <button class="btn about_btn">Подробнее ›</button>
+            </div>
         </section>
         <section class="feedback">
-
+            <div class="feedback__container">
+                <div class="feedback__company-logo"><img src="./img/logo_ico.svg" alt="логотип бабочка"></div>
+                <h2 class="feedback__title">Остались вопросы?</h2>
+                <p class="feedback__text">Заполните форму, мы свяжемся с вами в ближайшее время, ответим на все вопросы и предоставим консультацию по ассортименту.</p>
+                <form action="" class="feedback__form">
+                    <input type="text" class="feedback__input" placeholder="Ваше имя">
+                    <input type="text" class="feedback__input" placeholder="Номер телефона">
+                    <div class="feedback__checkbox-container">
+                        <input type="checkbox" class="feedback__checkbox" name="agreement">
+                        <label for="agreement">Я согласен(а) с Политикой конфиденциальности.</label>
+                    </div>
+                    <button class="btn feedback__btn" type="submit">Оставить заявку</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <img src="" alt="" class="logo"><button class="whats-up"></button>
-        <nav class="catalog"></nav>
-        <nav class="client"></nav>
-        <div class="feedback-footer"></div>
-        <div class="contacts"></div>
+        <div class="footer__container">
+            <img src="./img/logo_main.png" alt="логотип" class="logo">
+            <button class=" btn whats-up"><img src="./img/whatsup_ico.svg" alt="иконка вотсап" class="whats-up-ico">Написать в WhatsApp</button>
+            <nav class="catalog-menu">
+                <h4 class="menu__title">КАТАЛОГ</h4>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Смесители</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Душевые системы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Душевые стойки</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Изливы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Аксессуары</a></li>
+                </ul>
+            </nav>
+            <nav class="client-menu">
+                <h4 class="menu__title">ДЛЯ КЛИЕНТА</h4>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Магазины</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+                <form action="footer-form">
+                    <p class="footer-form__text">Узнавайте об акциях и новостях первыми, подпишитесь на рассылку</p>
+                    <div class="footer-form__input-container">
+                        <input type="text" class="footer-form__input" placeholder="Электронная почта">
+                        <button class="btn footer-form__btn" type="submit">Подписаться ›</button>
+                    </div>
+                </form>
+            <div class="contacts">
+                <p class="contacts__phone">+7 999 999-99-99</p>
+                <p class="contacts__adress"><img src="./icons/location_ico.svg" alt="локация" class="contacts__location-ico">г. Новосибирск, улица, дом, офис</p>
+            </div>
+        </div>
     </footer>
 </div>
 <script src="js/main.min.js"></script>
