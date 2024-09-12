@@ -1,0 +1,138 @@
+.products{
+    display:grid;
+    grid-template-rows: min-content 1fr min-content;
+    @include respond(tab-lend){
+        grid-column: 1 /-1;
+       }
+    &__control{
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+        align-items: center;
+        width: 100%;
+        grid-column-gap: rem(10px);
+        margin-bottom: rem(25px);
+        @include respond(tab-lend){
+            display: none;
+           }
+        .btn{
+            &:not(:first-child){
+                background-color: $color-white;
+                color: $color-blue;
+            }
+
+        }
+
+    }
+    &__control-mobile{
+         flex-direction: column;  
+         display: none;
+         @include respond(tab-lend){
+            display: flex;
+        }
+        .control-mobile__top{
+            display: flex;
+            margin-bottom: rem(26px);
+            @include respond(phone){
+                flex-wrap: wrap;
+            }
+            .btn{
+                margin-right: rem(10px);
+                @include respond(phone){
+                    margin-bottom: rem(10px);
+                }
+                &:not(:first-child){
+                    background-color: $color-white;
+                    color: $color-blue;
+                    .arrow{
+                        transform: rotate(180deg);
+                    }
+                }
+                .burger-white{
+                    margin-right: rem(10px);
+                }
+                span{
+                    margin-right: rem(10px);
+                }
+            }
+        }
+        .control-mobile__bottom{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: rem(27px);
+        }
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        justify-content: space-evenly;
+        grid-row-gap: rem(24px);
+        margin-bottom: rem(40px);
+        @media only screen and (max-width:1520px){
+            grid-template-columns: min-content min-content;
+        }
+        @include respond(tab-lend){
+            grid-template-columns: min-content min-content min-content;
+        }
+        @include respond(tab-port){
+            grid-template-columns: min-content min-content;
+        }
+        @include respond(phone){
+            grid-template-columns: max-content;
+        }
+        @include respond(min-phone){
+            grid-template-columns: min-content;
+        }
+    }
+    &__pagination{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: rem(80px);
+        .btn__arrow-left,.btn__arrow-right{
+            width: rem(40px);
+            height: rem(40px);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .btn__arrow-left{
+            margin-right: rem(20px);
+        }
+        .btn__arrow-right{
+            transform: rotate(180deg);
+        }
+        .pagination{
+            &__list{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                margin-right: rem(20px);
+            }
+            &__item{
+                width: rem(40px);
+                height: rem(40px);
+                border-radius: 50%;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            &__item-current{
+                background-color:rgba($color-beige-light, 0.2);
+            }
+        }
+    }
+}
+.products__sorting{
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    img{
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+}

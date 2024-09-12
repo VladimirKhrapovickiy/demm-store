@@ -7,3 +7,12 @@
         color:$color-beige
     }
 }
+.blue-opacity{
+    color: rgba($color-blue, 0.5);
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.container{
+    margin-bottom: 0;
+}

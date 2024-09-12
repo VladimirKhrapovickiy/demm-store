@@ -4,7 +4,6 @@
 
 @import "./base/base";
 @import "./base/typography";
-@import "./base/utilities";
 @import "./base/animations";
 
 @import "./layout/header";
@@ -22,5 +21,17 @@
 @import "./components/promotions";
 @import "./components/about";
 @import "./components/feedback";
+@import "./components/rights";
+@import "./components/menu-mobile";
+@import "./components/breadcrumbs";
+@import "./components/catalog-categories";
+@import "./components/filters";
+@import "./components/range-slider";
+@import "./components/inner-listing";
+@import "./components/products";
+@import "./components/_product-card";
+
+@import "./base/utilities";
 
 @import "./pages/home";
+@import "./pages/catalog";

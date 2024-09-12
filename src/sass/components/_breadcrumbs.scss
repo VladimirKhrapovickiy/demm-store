@@ -1,0 +1,17 @@
+.breadcrumbs{
+    margin-bottom: rem(25px);
+    @include respPadding(rem(25px), 0);
+    &__list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__item{
+        color: $color-blue;
+        font-size: rem(15px);
+        line-height: 135%;
+        &:not(:last-child){
+            margin-right: rem(10px);
+        }
+    }
+}

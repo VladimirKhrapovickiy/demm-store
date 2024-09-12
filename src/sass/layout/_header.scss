@@ -1,4 +1,9 @@
 .header{
+    @include respond(tab-port){
+        position: sticky;
+        top: 0;
+        z-index: 4;
+    }
     .menu-top{
         background-color:$color-gray-light;
         display: flex;
@@ -50,6 +55,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        background-color: $color-white;
         @include respPadding(rem(8px), rem(8px));
         @include respond(tab-port){
             background-color:$color-white;
@@ -90,45 +96,13 @@
             }
         }
         .contacts{
-            margin-right: rem(20px);
-            min-width: rem(194px);
             @include respond(tab-port){
                 display: none;
-            }
-            &__phone{
-                color: $color-blue;
-                font-size: rem(22px);
-                line-height: 135%;
-                letter-spacing: -4%;
-                &:hover{
-                    color:$color-blue-light;
-                }
             }
         }
         .order_call{
             @include respond(tab-port){
                 display: none;
-            }
-        }
-        .cart{
-            margin-right: rem(10px);
-            display: none;
-            @include respond(tab-port){
-                display: block;
-            }
-        }
-        .account{
-            display: none;
-            margin-right: rem(10px);
-            @include respond(tab-port){
-                display: block;
-            }
-        }
-        .search{
-            display: none;
-            margin-right: rem(10px);
-            @include respond(min-phone){
-                display: block;
             }
         }
     }
@@ -151,9 +125,12 @@
 
         }
         &__link{
-            display: inline-block;
+            display: flex;
             color:$color-white;
-            padding: rem(13px) rem(20px);
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 0 rem(20px);
             &:hover{
                 background-color:$color-blue-light;
             }
@@ -162,18 +139,8 @@
             height: 100%;
             text-align: center;
             &:first-child{
-                background-color:$color-beige-light;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
                 img{
                     margin-right: rem(9px);
-                }
-                .menu-bot__link{
-                    padding: rem(12px) rem(40px);
-                    &:hover{
-                        background-color:$color-beige-dark;
-                    }
                 }
             }
         }
@@ -183,6 +150,25 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            .cart_ico {
+                transform: translateY(-50%) translateX(-112%) !important;
+            }
+            p{
+                margin-left: rem(10px);
+            }
+        }
+    }
+}
+.contacts{
+    margin-right: rem(20px);
+    min-width: rem(194px);
+    &__phone{
+        color: $color-blue;
+        font-size: rem(22px);
+        line-height: 135%;
+        letter-spacing: -4%;
+        &:hover{
+            color:$color-blue-light;
         }
     }
 }

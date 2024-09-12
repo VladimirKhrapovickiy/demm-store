@@ -1,0 +1,34 @@
+.rights{
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        grid-template-rows: 1fr;
+        grid-column-gap: rem(100px);
+        background-color: $color-gray-light;
+        list-style: none;
+        text-wrap: nowrap;
+        @include respPadding(rem(10px), rem(10px));
+        @include respond(tab-port){
+            grid-column-gap: rem(30px);
+        }
+        @include respond(min-phone){
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, min-content);
+            grid-column-gap: 0px;
+            grid-row-gap: rem(6px);
+        }
+    }
+    &__item{
+        font-size: rem(15px);
+        line-height: 135%;
+        color:rgba($color-beige-dark, 0.8);
+        &:first-child{
+            @include respond(min-phone){
+                grid-row: 3 / 4;
+            }
+        }
+        &:hover{
+            color: $color-beige-light;
+        }
+    }
+}

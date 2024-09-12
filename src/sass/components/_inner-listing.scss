@@ -1,0 +1,28 @@
+.inner-listing{
+    &__list{
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    &__items{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        input[type=checkbox]{
+            border: 1px solid $color-blue;
+            margin-right: rem(8px);
+            height: rem(16px);
+            width: rem(16px);
+            background-color: $color-white;
+        }
+        input[type="checkbox"]:checked{
+            background-color: $color-blue;
+          }
+        input[type="checkbox"]::before {
+            background-color: $color-white;
+            clip-path:polygon(14% 50%, 44% 80%, 84% 31%, 77% 28%, 44% 69%, 20% 44%);
+          }
+    }
+}

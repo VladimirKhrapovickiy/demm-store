@@ -1,0 +1,81 @@
+.filters{
+    @include respond(tab-lend){
+        display: none;
+       }
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: min-content min-content;
+        grid-template-rows: min-content min-content;
+        cursor: pointer;
+        justify-content: space-between;
+        padding-top: rem(15px);
+        padding-bottom: rem(15px);
+        color: $color-blue;
+        font-size: rem(18px);
+        line-height: 135%;
+        letter-spacing: -1px;
+        font-weight: 600;
+        align-items: center;
+        img{
+            margin-left: auto;
+        }
+        &:not(:last-child){
+            border-bottom: 1px solid $color-gray-blue;
+        }
+        .inner-listing__list{
+            grid-column: 1 / -1;
+            .inner-listing__items{
+                cursor:default;
+                label{
+                    color:$color-gray-blue;
+                    font-size: rem(16px);
+                    line-height: 155%;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+                input[type="checkbox"]:checked ~ label{
+                    color: $color-blue;
+                    font-weight: 600;
+                  }
+            }
+        }
+        &-price{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            span{
+                margin-bottom: rem(15px);
+            }
+            .slider{
+                margin-bottom: rem(40px);
+            }
+        }
+    }
+    &__name{
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.clear-filters{
+    color: $color-gray-blue;
+    border-bottom: 1px solid $color-gray-blue;
+    padding-bottom: 2px;
+    text-wrap: nowrap;
+    font-size: rem(14px);
+    line-height: 145%;
+    width: fit-content;
+    margin-bottom: rem(24px) ;
+}
+.show_products{
+    border-radius:rem(25px);
+    background-color: $color-white;
+    padding: rem(12px) rem(25px);
+    border: 1px solid $color-gray-dark;
+
+}

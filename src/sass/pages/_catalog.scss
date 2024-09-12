@@ -1,0 +1,18 @@
+.main-catalog{
+    background-color:$color-gray-light;
+}
+.catalog-main-title{
+    color: $color-blue;
+    line-height: 105%;
+    letter-spacing: -1px;
+    font-size: rem(46px);
+    margin-bottom: rem(40px);
+    font-weight: 500;
+    @include respPadding(0, 0);
+}
+.catalog-listing{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: rem(40px);
+    @include respPadding(0, 0);
+}

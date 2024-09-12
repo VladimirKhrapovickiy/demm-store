@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <nav class="menu-top">
+            <ul class="menu-top__list">
+                <li class="menu-top__item"><a href="#" class="menu-top__link">О компании</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Оплата и доставка</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Магазины</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Контакты</a></li>
+            </ul>
+            <div class="menu-top__personal_account">
+                <img src="../icons/user.svg" alt="пользователь" class="accaunt_ico">
+                <p>Личный кабинет</p>
+            </div>
+        </nav>
+        <div class="mid">
+            
+            <a href="#"><img src="./img/logo_main.png" alt="" class="logo"></a>
+            <div class="search_bar">
+                <input type="text" class="search_bar__input" id="search_bar__input" placeholder="Поиск по сайту...">
+                <img src="../icons/search.svg" alt="увеличительное стекло" class="search_bar__ico">
+            </div>
+            <div class="contacts">
+                <p class="contacts__phone">+7 999 999-99-99</p>
+                <p class="contacts__working-hours">Звоните с 8:10 до 18:10</p>
+            </div>
+            <button class="btn order_call">Заказать звонок</button>
+            <div class="search">
+                <div class="ico-container"><img src="../icons/search.svg" alt="увеличительное стекло" class="cart_ico"></div>
+            </div>
+            <div class="cart">
+                <div class="ico-container"><img src="../icons/cart-blue.svg" alt="корзина" class="cart_ico"><div class="goods_count">0</div></div>
+            </div>
+            <div class="account">
+                <div class="ico-container"><img src="../icons/user.svg" alt="корзина" class="cart_ico"></div>
+            </div>
+            <div class="burger-container">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label class="burger" for="burger-checkbox"></label>
+            </div>
+        </div>
+        <nav class="menu-bot">
+            <ul class="menu-bot__list">
+                <li class="menu-bot__item menu-bot__item-accent"><a href="#" class="menu-bot__link"><img src="../icons/sale.svg" alt="скидка">Акции</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Смесители</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Душевые системы</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Душевые стойки</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Изливы</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Аксессуары</a></li>
+            </ul>
+            <div class="cart menu-bot__cart">
+                <div class="ico-container"><img src="../icons/cart.svg" alt="корзина" class="cart_ico"><div class="goods_count">0</div></div>
+                <p>Корзина</p>
+            </div>
+        </nav>
+        <div class="menu-mobile__container">
+            <div class="menu-mobile">
+                <img src="./img/logo_main.png" alt="логотип" class="menu-mobile__logo">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Каталог</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Акции</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">О компании</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Оплата и доставка</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Магазины</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Контакты</a></li>
+                </ul>
+                <div class="cart menu-mobile__cart">
+                    <div class="ico-container"><img src="../icons/cart-blue.svg" alt="корзина" class="cart_ico"><div class="goods_count">0</div></div>
+                    <p>Корзина</p>
+                </div>
+                <div class="account menu-mobile__account">
+                    <div class="ico-container"><img src="../icons/user.svg" alt="корзина" class="cart_ico"></div>
+                    <p>Личный кабинет</p>
+                </div>
+                <div class="contacts menu-mobile__contacts">
+                    <p class="contacts__phone">+7 999 999-99-99</p>
+                    <p class="contacts__working-hours">Звоните с 8:10 до 18:10</p>
+                </div>
+                <button class="btn order_call menu-mobile__btn-order"><a>Заказать звонок</a></button>
+                <button class=" btn whats_up menu-mobile__btn-whats_up"><a><img src="./img/whatsup_ico.svg" alt="иконка вотсап" class="whats-up-ico">Написать в WhatsApp</a>    </button>
+            </div>
+        </div>
+    </header>
+    <main class="main main-catalog">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item .blue-opacity"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item .blue-opacity">/</li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+            </ul>
+        </div>
+        <h1 class="catalog-main-title">Каталог</h1>
+        <section class="catalog-categories">
+            <div class="catalog-categories__container">
+                <div class="category">
+                    <img src="./img/catalog_category_1.png" alt="смеситель" class="category__img">
+                    <span class="category__name">Смесители</span>
+                    <span class="category__goods-count">Товаров: 370</span>
+                </div>
+                <div class="category">
+                    <img src="./img/catalog_category_2.png" alt="душ" class="category__img">
+                    <span class="category__name">Душевые системы</span>
+                    <span class="category__goods-count">Товаров: 120</span>
+                </div>
+                <div class="category">
+                    <img src="./img/catalog_category_3.png" alt="душевая стойка" class="category__img">
+                    <span class="category__name">Душевые стойки</span>
+                    <span class="category__goods-count">Товаров: 146</span>
+                </div>
+                <div class="category">
+                    <img src="./img/catalog_category_4.png" alt="излив" class="category__img">
+                    <span class="category__name">Изливы</span>
+                    <span class="category__goods-count">Товаров: 88</span>
+                </div>
+                <div class="category">
+                    <img src="./img/catalog_category_5.png" alt="шланг" class="category__img">
+                    <span class="category__name">Аксессуары</span>
+                    <span class="category__goods-count">Товаров: 32</span>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-listing">
+            <div class="filters">
+                <ul class="filters__list">
+                    <li class="filters__item with-inner-menu">
+                        <div class="filters__name"><span>Коллекция</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
+                        <ul class="inner-listing__list">
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="ACIARIUM_INOX" name="ACIARIUM_INOX"/><label for="ACIARIUM_INOX">ACIARIUM INOX<span class="products_count">(11)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="ALKES" name="ALKES"/><label for="ALKES">ALKES<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="DRAKE" name="DRAKE"/><label for="DRAKE">DRAKE<span class="products_count">(4)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="ELITE" name="ELITE"/><label for="ELITE">ELITE<span class="products_count">(4)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="ERYOS" name="ERYOS"/><label for="ERYOS">ERYOS<span class="products_count">(10)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="GRANGE" name="GRANGE"/><label for="GRANGE">GRANGE<span class="products_count">(12)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="IVORY" name="IVORY"/><label for="IVORY">IVORY<span class="products_count">(3)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="JAGO" name="JAGO"/><label for="JAGO">JAGO<span class="products_count">(11)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="KLARYNG" name="KLARYNG"/><label for="ACIARIUM_INOX">KLARYNG<span class="products_count">(36)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="KUOVADIS" name="KUOVADIS"/><label for="KUOVADIS">KUOVADIS<span class="products_count">(12)</span></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__item with-inner-menu"><span>Стиль</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow">
+                    </li>
+                    <li class="filters__item with-inner-menu">
+                        <div class="filters__name"><span>Цвет</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
+                        <ul class="inner-listing__list">
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="hrom" name="hrom"/><label for="ACIARIUM_INOX">Хром</label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="gold" name="gold"/><label for="gold">Золото</label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="bronze" name="bronze"/><label for="bronze">Бронза</label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="black" name="black"/><label for="bronze">Черный</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__item filters__item-price">
+                    <span>Цена, руб.</span>
+                    <div class="wrapper">
+                        <div class="values">
+                          <input type="number" id="range1" value="0" readonly>
+                          <span> &dash; </span>
+                          <input type="number" id="range2" value="100" readonly>
+                        </div>
+                        <div class="range-slider-container">
+                          <div class="slider-track"></div>
+                          <input type="range" min="0" max="100000" value="0" id="slider-1" oninput="slideOne()" step="500">
+                          <input type="range" min="0" max="100000" value="100000" id="slider-2" oninput="slideTwo()" step="500">
+                        </div>
+                    </div>
+                    <div class="clear-filters">Сбросить фильтры</div>
+                    <div class="show_products">Показать</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="products">
+                <div class="products__control">
+                    <button class="btn">Новинки</button>
+                    <button class="btn">Акционные товары</button>
+                    <button class="btn">Хиты продаж</button>
+                    <span class="products__sorting">Сортировка <img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></span>
+                </div>
+                <div class="products__control-mobile">
+                    <div class="control-mobile__top">
+                        <button class="btn"><img src="./icons/burger-white.svg" alt="бургер меню" class="burger-white"><span>Категория</span><img src="./icons/arrow_top_ico-white.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Коллекция</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Стиль </span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Цвет</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Цена, руб.</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                    </div>
+                    <div class="control-mobile__bottom">
+                        <div class="clear-filters">Сбросить фильтры</div>
+                        <span class="products__sorting">Сортировка <img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></span>
+                    </div>
+                </div>
+                <div class="products__list">
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                            <a href="#" class="product-card__tag-new">Новинка</a>
+                            <a href="#" class="product-card__tag-promo">Акция</a>
+                            <a href="#" class="product-card__tag-hit">Хит</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-1.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/not-avalible_ico.svg" alt="перекрестие" class="not_avalible"> Нет в наличии</span>
+                            <span class="availability__article">Артикул: 4720X</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для биде на 1 отв. с донным клапаном, цвет: бронза</p>
+                        <span class="product-card__colection">Коллекция: ERYOS</span>
+                        <div class="product-card__price">
+                            <span class="price-red">45 220 руб./шт</span>
+                            <span class="price-old">54 600 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                            <a href="#" class="product-card__tag-new">Новинка</a>
+                            <a href="#" class="product-card__tag-hit">Хит</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-2.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability avalible"><img src="./icons/avalible_ico.svg" alt="галочка" class="not_avalible">В наличии</span>
+                            <span class="availability__article">Артикул: 4718CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины встраиваемый, с внутренней частью, излив 18 см, цвет: хром-золото</p>
+                        <span class="product-card__colection">Коллекция: ACIARIUM INOX</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">38 000 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart">В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                            <a href="#" class="product-card__tag-hit">Хит</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-3.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability avalible"><img src="./icons/avalible_ico.svg" alt="галочка" class="not_avalible">В наличии</span>
+                            <span class="availability__article">Артикул: 4718CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины настенный скрытого монтажа, излив 18 см, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: JAGO</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">34 500 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart">В корзину</button>
+                        <div class="product-card__add-to-cart">
+                            <div class="add-to-cart__btns">
+                                <div class="add-to-cart__decrease">-</div>
+                                <span class="add-to-cart__quantity">1</span>
+                                <div class="add-to-cart__increase">+</div>
+                            </div><span>шт.</span>
+                        </div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-4.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="галочка" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 47123CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины на 1 отв. с донным клапаном, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: KUOVADIS</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">26 000 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                            <a href="#" class="product-card__tag-promo">Акция</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-5.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/not-avalible_ico.svg" alt="перекрестие" class="not_avalible"> Нет в наличии</span>
+                            <span class="availability__article">Артикул: 44220X</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для биде на 1 отв. с донным клапаном, цвет: бронза</p>
+                        <span class="product-card__colection">Коллекция: ERYOS</span>
+                        <div class="product-card__price">
+                            <span class="price-red">35 400 руб./шт</span>
+                            <span class="price-old">44 220 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-6.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="перекрестие" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 4990X</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины на 1 отв, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: ERYOS</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">26 360 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                            <a href="#" class="product-card__tag-new">Новинка</a>
+                            <a href="#" class="product-card__tag-promo">Акция</a>
+                            <a href="#" class="product-card__tag-hit">Хит</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-7.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="галочка" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 4990X</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины на 1 отв, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: ERYOS</span>
+                        <div class="product-card__price">
+                            <span class="price-red">26 360 руб./шт</span>
+                            <span class="price-old">29 600 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-8.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="перекрестие" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 4718CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины, излив 18 см, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: JAGO</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">34 500 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-9.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="перекрестие" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 4718CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины, излив 18 см, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: JAGO</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">34 500 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-10.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="перекрестие" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 4718CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины, излив 18 см, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: JAGO</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">34 500 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-11.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="перекрестие" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 4718CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины, излив 18 см, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: JAGO</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">34 500 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__tags">
+                        </div>
+                        <div class="product-card__img"><img src="./img/product-12.png" alt="кран" ></div>
+                        <div class="product-card__info">
+                            <span class="product-card__availability"><img src="./icons/avalible_ico.svg" alt="перекрестие" class="avalible"> В наличии</span>
+                            <span class="availability__article">Артикул: 4718CD</span>
+                        </div>
+                        <p class="product-card__description">Demm Rory Смеситель для раковины, излив 18 см, цвет: хром</p>
+                        <span class="product-card__colection">Коллекция: JAGO</span>
+                        <div class="product-card__price">
+                            <span class="price-standart">34 500 руб./шт</span>
+                        </div>
+                        <button class="btn product-card__btn btn-to-cart" >В корзину</button>
+                        <div class="product-card__add-to-cart"><div class="add-to-cart__btns"><div class="add-to-cart__decrease">-</div><span class="add-to-cart__quantity">1</span><div class="add-to-cart__increase">+</div></div><span>шт.</span></div>
+                        <button class="btn product-card__btn">Купить в 1 клик</button>
+                    </div>
+                </div>
+                <div class="products__pagination">
+                    <div class="btn__arrow-left"><img src="./icons/btn-arrow-left.svg" alt="стрелка влево"></div>
+                    <ul class="pagination__list">
+                        <li class="pagination__item pagination__item-current">1</li>
+                        <li class="pagination__item">2</li>
+                        <li class="pagination__item">3</li>
+                        <li class="pagination__item">4</li>
+                        <li class="pagination__item">...</li>
+                        <li class="pagination__item">12</li>
+                        <li class="pagination__item">13</li>
+                        <li class="pagination__item">14</li>
+                    </ul>
+                    <div class="btn__arrow-right"><img src="./icons/btn-arrow-left.svg" alt="стрелка вправо"></div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback__container">
+                <div class="feedback__company-logo"><img src="./img/logo_ico.svg" alt="логотип бабочка"></div>
+                <h2 class="feedback__title">Остались вопросы?</h2>
+                <p class="feedback__text">Заполните форму, мы свяжемся с вами в ближайшее время, ответим на все вопросы и предоставим консультацию по ассортименту.</p>
+                <form action="" class="feedback__form">
+                    <input type="text" class="feedback__input" placeholder="Ваше имя">
+                    <input type="text" class="feedback__input" placeholder="Номер телефона">
+                    <div class="feedback__checkbox-container">
+                        <input type="checkbox" class="feedback__checkbox" name="agreement">
+                        <label for="agreement">Я согласен(а) с Политикой конфиденциальности.</label>
+                    </div>
+                    <button class="btn feedback__btn" type="submit">Оставить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./img/logo_main.png" alt="логотип" class="logo">
+            <button class=" btn whats_up"><img src="./img/whatsup_ico.svg" alt="иконка вотсап" class="whats_up-ico">Написать в WhatsApp</button>
+            <nav class="catalog-menu">
+                <h4 class="menu__title">КАТАЛОГ</h4>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Смесители</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Душевые системы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Душевые стойки</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Изливы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Аксессуары</a></li>
+                </ul>
+            </nav>
+            <nav class="client-menu">
+                <h4 class="menu__title">ДЛЯ КЛИЕНТА</h4>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Магазины</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__form-container">
+                <form action="footer-form">
+                    <p class="footer-form__text">Узнавайте об акциях и новостях первыми, подпишитесь на рассылку</p>
+                    <div class="footer-form__input-container">
+                        <input type="text" class="footer-form__input" placeholder="Электронная почта">
+                        <button class="btn footer-form__btn" type="submit">Подписаться ›</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contacts">
+                <p class="contacts__phone">+7 999 999-99-99</p>
+                <p class="contacts__adress"><img src="./icons/location_ico.svg" alt="локация" class="contacts__location-ico">г. Новосибирск, улица, дом, офис</p>
+            </div>
+        </div>
+        <div class="rights">
+            <ul class="rights__list">
+                <li class="rights__item">© DEMM RUBINETTERIA 2023</li>
+                <li class="rights__item"><a href="#" class="rights__link">Договор оферты</a></li>
+                <li class="rights__item"><a href="#" class="rights__link">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+</html>

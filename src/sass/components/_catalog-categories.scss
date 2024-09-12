@@ -1,0 +1,76 @@
+.catalog-categories{
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: rem(40px);
+        flex-wrap: wrap;
+        @include respPadding(0 , 0);
+        @include respond(big-screen){
+            justify-content: flex-start;
+        }
+        @include respond(phone){
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    .category{
+        display: flex;
+        flex-direction: column;
+        align-items:left;
+        background-color: $color-white;
+        border-radius: 15px;
+        padding: rem(20px) rem(30px) rem(25px) rem(30px);
+        margin-bottom: rem(20px);
+        @include respond(phone){
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: min-content min-content;
+            grid-column-gap: rem(20px);
+        }
+        &:not(:last-child){
+            margin-right: rem(24px);
+            @include respond(phone){
+                margin-right: 0;
+            }
+        }
+        &__img{
+            align-self:center;
+            max-width: 180px;
+            max-height: 180px;
+            margin-bottom: rem(15px);
+            @include respond(phone){
+                grid-row: 1 / -1;
+                width: rem(180px);
+                height: rem(180px);
+            }
+        }
+        &__name{
+            color: $color-blue;
+            font-size: rem(20px);
+            letter-spacing: -1px;
+            line-height: 125%;
+            margin-bottom: 5px;
+            @include respond(phone){
+                align-self:self-end;
+                font-size: rem(36px);
+                font-weight: 600;
+            }
+            @include respond(min-phone){
+                font-size: rem(28px);
+            }
+        }
+        &__goods-count{
+            color: $color-gray-blue;
+            font-size: rem(16px);
+            line-height: 155%;
+            @include respond(phone){
+                font-size: rem(28px);
+                font-weight: 400;
+            }
+            @include respond(min-phone){
+                font-size: rem(22px);
+            }
+        }
+    }
+}

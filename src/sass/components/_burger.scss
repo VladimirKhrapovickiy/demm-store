@@ -7,6 +7,7 @@
     padding-right: rem(25px);
     position: relative;
     display: none;
+    z-index: 5;
     @include respond(tab-port){
         display: block;
     }

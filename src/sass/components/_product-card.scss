@@ -1,0 +1,146 @@
+.product-card{
+    padding: rem(20px);
+    position: relative;
+    background-color: $color-white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__tags{
+        position: absolute;
+        top:rem(20px);
+        left:rem(20px);
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }
+    &__tag-new{
+        padding: rem(4px) rem(10px);
+        margin-right: rem(5px);
+        border-radius: rem(25px);
+        background-color:$color-green;
+        color: $color-white ;
+    }
+    &__tag-promo{
+        padding: rem(4px) rem(10px);
+        margin-right: rem(5px);
+        border-radius: rem(25px);
+        background-color:$color-red;
+        color: $color-white ;
+    }
+    &__tag-hit{
+        padding: rem(4px) rem(10px);
+        margin-right: rem(5px);
+        border-radius: rem(25px);
+        background-color:$color-purple;
+        color: $color-white ;
+    }
+    &__img{
+        width: 100%;
+        margin-bottom: rem(12px);
+        img{
+            object-fit: cover;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: rem(12px);
+        line-height: 155%;
+        color:$color-gray-blue;
+        margin-bottom: rem(8px);
+    }
+    &__availability{
+        text-align: center;
+        display:flex;
+        img{
+            width: rem(14px);
+            height: rem(14px);
+            margin-right: rem(6px);
+        }
+    }
+    .avalible{
+        color: $color-green;
+    }
+    &__description{
+        color: $color-blue;
+        font-size: rem(14px);
+        letter-spacing: -1px;
+        font-weight: 500;
+        line-height: 135%;
+        margin-bottom: rem(8px);
+    }
+    &__colection{
+        display: inline-block;
+        color: $color-gray-blue;
+        font-size: rem(14px);
+        line-height: 155%;
+        margin-bottom: rem(27px);
+    }
+    &__price{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: rem(12px);
+        .price-standart{
+            font-size: rem(16px);
+            line-height: 135%;
+            letter-spacing: -1px;
+            color: $color-blue;
+            font-weight: 600;
+        }
+        .price-red{
+            margin-right: rem(8px);
+            color:$color-red;
+            font-size: rem(16px);
+            letter-spacing: -1px;
+            line-height: 135%;
+            font-weight: 600;
+        }
+        .price-old{
+            color: $color-gray-blue;
+            text-decoration: line-through;
+            text-decoration-color: $color-red;
+        }
+    }
+    &__btn{
+        width: 100%;
+        margin-bottom: rem(8px);
+        &:last-child{
+            background-color:$color-gray-light;
+            color: $color-blue;
+            border:1px solid $color-gray-dark;
+        }
+    }
+    &__add-to-cart{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: rem(4px);
+        align-items: center;
+        display: none;
+        .add-to-cart__btns{
+            background-color:$color-blue-dark;
+            color: $color-white;
+            width: 100%;
+            border-radius:25px;
+            margin-right: rem(6px);
+            display: flex;
+            justify-content: space-between;
+            display: flex;
+            align-items:center;
+            .add-to-cart__decrease,.add-to-cart__increase{
+                width: 30%;
+                height: rem(54px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                padding-bottom: rem(3px);
+            }
+            .add-to-cart__quantity{
+                cursor:default;
+            }
+        }
+    }
+}
