@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <nav class="menu-top">
+            <ul class="menu-top__list">
+                <li class="menu-top__item"><a href="#" class="menu-top__link">О компании</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Оплата и доставка</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Магазины</a></li>
+                <li class="menu-top__item"><a href="#" class="menu-top__link">Контакты</a></li>
+            </ul>
+            <div class="menu-top__personal_account">
+                <img src="../icons/user.svg" alt="пользователь" class="accaunt_ico">
+                <p>Личный кабинет</p>
+            </div>
+        </nav>
+        <div class="mid">
+            <a href="#"><img src="./img/logo_main.png" alt="" class="logo"></a>
+            <div class="search_bar">
+                <input type="text" class="search_bar__input" id="search_bar__input" placeholder="Поиск по сайту...">
+                <img src="../icons/search.svg" alt="увеличительное стекло" class="search_bar__ico">
+            </div>
+            <div class="contacts">
+                <p class="contacts__phone">+7 999 999-99-99</p>
+                <p class="contacts__working-hours">Звоните с 8:10 до 18:10</p>
+            </div>
+            <button class="btn order_call">Заказать звонок</button>
+            <div class="search">
+                <div class="ico-container"><img src="../icons/search.svg" alt="увеличительное стекло" class="cart_ico"></div>
+            </div>
+            <div class="cart">
+                <div class="ico-container"><img src="../icons/cart-blue.svg" alt="корзина" class="cart_ico"><div class="goods_count">0</div></div>
+            </div>
+            <div class="account">
+                <div class="ico-container"><img src="../icons/user.svg" alt="корзина" class="cart_ico"></div>
+            </div>
+            <div class="burger-container">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label class="burger" for="burger-checkbox"></label>
+            </div>
+        </div>
+        <nav class="menu-bot">
+            <ul class="menu-bot__list">
+                <li class="menu-bot__item menu-bot__item-accent"><a href="#" class="menu-bot__link"><img src="../icons/sale.svg" alt="скидка">Акции</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Смесители</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Душевые системы</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Душевые стойки</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Изливы</a></li>
+                <li class="menu-bot__item"><a href="#" class="menu-bot__link">Аксессуары</a></li>
+            </ul>
+            <div class="cart menu-bot__cart">
+                <div class="ico-container"><img src="../icons/cart.svg" alt="корзина" class="cart_ico"><div class="goods_count">0</div></div>
+                <p>Корзина</p>
+            </div>
+        </nav>
+        <div class="menu-mobile__container">
+            <div class="menu-mobile">
+                <img src="./img/logo_main.png" alt="логотип" class="menu-mobile__logo">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Каталог</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Акции</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">О компании</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Оплата и доставка</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Магазины</a></li>
+                    <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Контакты</a></li>
+                </ul>
+                <div class="cart menu-mobile__cart">
+                    <div class="ico-container"><img src="../icons/cart-blue.svg" alt="корзина" class="cart_ico"><div class="goods_count">0</div></div>
+                    <p>Корзина</p>
+                </div>
+                <div class="account menu-mobile__account">
+                    <div class="ico-container"><img src="../icons/user.svg" alt="корзина" class="cart_ico"></div>
+                    <p>Личный кабинет</p>
+                </div>
+                <div class="contacts menu-mobile__contacts">
+                    <p class="contacts__phone">+7 999 999-99-99</p>
+                    <p class="contacts__working-hours">Звоните с 8:10 до 18:10</p>
+                </div>
+                <button class="btn order_call menu-mobile__btn-order"><a>Заказать звонок</a></button>
+                <button class=" btn whats_up menu-mobile__btn-whats_up"><a><img src="./img/whatsup_ico.svg" alt="иконка вотсап" class="whats-up-ico">Написать в WhatsApp</a>    </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item blue-opacity"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item blue-opacity">/</li>
+                <li class="breadcrumbs__item blue-opacity"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+                <li class="breadcrumbs__item">/</li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Смесители</a></li>
+                <li class="breadcrumbs__item">/</li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Demm Rory Смеситель для раковины настенный скрытого монтажа, излив 18 см, цвет: хром</a></li>
+            </ul>
+        </div>
+    
+       
+        <section class="feedback">
+            <div class="feedback__container">
+                <div class="feedback__company-logo"><img src="./img/logo_ico.svg" alt="логотип бабочка"></div>
+                <h2 class="feedback__title">Остались вопросы?</h2>
+                <p class="feedback__text">Заполните форму, мы свяжемся с вами в ближайшее время, ответим на все вопросы и предоставим консультацию по ассортименту.</p>
+                <form action="" class="feedback__form">
+                    <input type="text" class="feedback__input" placeholder="Ваше имя">
+                    <input type="text" class="feedback__input" placeholder="Номер телефона">
+                    <div class="feedback__checkbox-container">
+                        <input type="checkbox" class="feedback__checkbox" name="agreement">
+                        <label for="agreement">Я согласен(а) с Политикой конфиденциальности.</label>
+                    </div>
+                    <button class="btn feedback__btn" type="submit">Оставить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./img/logo_main.png" alt="логотип" class="logo">
+            <button class=" btn whats_up"><img src="./img/whatsup_ico.svg" alt="иконка вотсап" class="whats_up-ico">Написать в WhatsApp</button>
+            <nav class="catalog-menu">
+                <h4 class="menu__title">КАТАЛОГ</h4>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Смесители</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Душевые системы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Душевые стойки</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Изливы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Аксессуары</a></li>
+                </ul>
+            </nav>
+            <nav class="client-menu">
+                <h4 class="menu__title">ДЛЯ КЛИЕНТА</h4>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Магазины</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__form-container">
+                <form action="footer-form">
+                    <p class="footer-form__text">Узнавайте об акциях и новостях первыми, подпишитесь на рассылку</p>
+                    <div class="footer-form__input-container">
+                        <input type="text" class="footer-form__input" placeholder="Электронная почта">
+                        <button class="btn footer-form__btn" type="submit">Подписаться ›</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contacts">
+                <p class="contacts__phone">+7 999 999-99-99</p>
+                <p class="contacts__adress"><img src="./icons/location_ico.svg" alt="локация" class="contacts__location-ico">г. Новосибирск, улица, дом, офис</p>
+            </div>
+        </div>
+        <div class="rights">
+            <ul class="rights__list">
+                <li class="rights__item">© DEMM RUBINETTERIA 2023</li>
+                <li class="rights__item"><a href="#" class="rights__link">Договор оферты</a></li>
+                <li class="rights__item"><a href="#" class="rights__link">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+</html>

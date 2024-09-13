@@ -1,0 +1,202 @@
+.product{
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: minmax(rem(100px), min-content) min-content min-content min-content ;
+    @include respPadding(0, 0);
+    &__imgs{
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        margin-right: rem(24px);
+    }
+    &__title{
+        font-size: rem(32px);
+        line-height: 125%;
+        letter-spacing: -1px;
+        color: $color-blue;
+    }
+    &__info{
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        .product-card__availability{
+            display: flex;
+            margin-bottom: rem(25px);
+            span:not(:last-child){
+                margin-right: rem(40px);
+            }
+        }
+    }
+
+    &__characteristics{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    &__price{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        .price__top{
+            background-color: $color-white;
+            border-radius: 16px;
+            padding: rem(30px);
+            .btn{
+                min-width: rem(240px);
+            }
+        }
+        .price-standart, .price-red, .price-old{
+            display: inline-block;
+            font-size: rem(22px);
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: rem(20px);
+
+        }
+    }
+    &__price_info{
+        padding: rem(20px);
+    }
+    &__description{
+        grid-column: 1 / -1;
+        grid-row: 3 / 5;
+    }
+}
+.imgs{
+    position: relative;
+    &__main_img{
+        border-radius: 15px;
+        margin-bottom: rem(15px);
+    }
+    &__carousel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .btn__arrow-right:last-child{
+            transform: rotate(180deg);
+        }
+    }
+    &__img{
+        border-radius: 11px;
+        cursor:pointer;
+    }
+    .btn__arrow-left, .btn__arrow-right{
+        cursor:pointer;
+    }
+    
+}
+.colors{
+    &__name{
+        display: inline-block;
+        color:$color-blue;
+        font-size: rem(18px);
+        line-height: 134%;
+        letter-spacing: -1px;
+        font-weight: 600;
+        margin-bottom: rem(15px);
+    }
+    &__color{
+        font-size: rem(16px);
+        line-height: 155%;
+        font-weight: 400;
+        margin-left: rem(12px);
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: rem(30px);
+    }
+    &__item{
+        &:not(:last-child){
+            margin-right: rem(10px);
+        }
+    }
+    &__img{
+        max-width: rem(50px);
+        max-height: rem(50px);
+    }
+}
+.characteristics{
+    padding-right: rem(24px);
+    &__title{
+        display: inline-block;
+        font-size: rem(18px);
+        letter-spacing: -1px;
+        color:$color-blue;
+        line-height: 135%;
+        margin-bottom: rem(20px);
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        padding-bottom: rem(10px);
+        border-bottom: 1px solid rgb($color-gray-blue, 0.7);
+        display: flex;
+        justify-content: space-between;
+        color: $color-blue;
+        &:not(:last-child){
+            margin-bottom: rem(10px);
+        }
+    }
+    &__name{
+        font-size: rem(16px);
+        line-height: 155%;
+    }
+    &__value{
+        font-size: rem(16px);
+        line-height: 155%;
+        color: $color-blue-dark;
+        font-weight: 600;
+    }
+}
+.description{
+    display: flex;
+    color: $color-blue;
+    margin-bottom: rem(60px);
+    &__left{
+        margin-right: rem(24px);
+        p:not(:last-child){
+            margin-bottom: rem(15px);
+        }
+    }
+    &__title{
+        font-size: 600;
+        line-height: 125%;
+        font-size: rem(32px);
+        margin-bottom: rem(20px);
+        letter-spacing: -1px;
+    }
+    &__text{
+        font-size: rem(16px);
+        line-height: 155%;
+    }
+    &__rigth{
+        background-color:$color-white;
+        padding: rem(30px);
+    }
+}
+.complictation{
+    max-height: rem(205px);
+    border-radius: 16px;
+    &__title{
+        font-size: rem(22px);
+        margin-bottom: rem(20px);
+        line-height: 135%;
+        letter-spacing: -1px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        text-wrap: nowrap;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: rem(10px);
+        }
+
+    }
+    &__name{
+        margin-left: rem(10px);
+    }
+}

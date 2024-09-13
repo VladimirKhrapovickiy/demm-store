@@ -6,14 +6,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    &__tags{
-        position: absolute;
-        top:rem(20px);
-        left:rem(20px);
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-    }
     &__tag-new{
         padding: rem(4px) rem(10px);
         margin-right: rem(5px);
@@ -83,26 +75,6 @@
         display: flex;
         flex-direction: row;
         margin-bottom: rem(12px);
-        .price-standart{
-            font-size: rem(16px);
-            line-height: 135%;
-            letter-spacing: -1px;
-            color: $color-blue;
-            font-weight: 600;
-        }
-        .price-red{
-            margin-right: rem(8px);
-            color:$color-red;
-            font-size: rem(16px);
-            letter-spacing: -1px;
-            line-height: 135%;
-            font-weight: 600;
-        }
-        .price-old{
-            color: $color-gray-blue;
-            text-decoration: line-through;
-            text-decoration-color: $color-red;
-        }
     }
     &__btn{
         width: 100%;
@@ -143,4 +115,12 @@
             }
         }
     }
+}
+.product-card__tags{
+    position: absolute;
+    top:rem(20px);
+    left:rem(20px);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
 }

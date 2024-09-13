@@ -25,7 +25,7 @@
             margin-left: auto;
         }
         &:not(:last-child){
-            border-bottom: 1px solid $color-gray-blue;
+            border-bottom: 1px solid rgba($color-gray-blue, 0.5);
         }
         .inner-listing__list{
             grid-column: 1 / -1;
@@ -60,6 +60,12 @@
         grid-column: 1/-1;
         display: flex;
         justify-content: space-between;
+    }
+    .product-count{
+        text-wrap: nowrap;
+        font-size: rem(16px);
+        line-height: 155%;
+        color: rgba($color-gray-blue, 0.7);
     }
 }
 .clear-filters{

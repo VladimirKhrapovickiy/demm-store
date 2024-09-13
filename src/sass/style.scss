@@ -30,8 +30,14 @@
 @import "./components/inner-listing";
 @import "./components/products";
 @import "./components/_product-card";
+@import "./components/product";
+@import "./components/collection-slider";
+@import "./components/add-product-slider";
 
 @import "./base/utilities";
 
 @import "./pages/home";
 @import "./pages/catalog";
+
+@import "./libs/slick.scss";
+@import "./libs/slick-theme.scss";

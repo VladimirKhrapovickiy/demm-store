@@ -25,7 +25,6 @@
             </div>
         </nav>
         <div class="mid">
-            
             <a href="#"><img src="./img/logo_main.png" alt="" class="logo"></a>
             <div class="search_bar">
                 <input type="text" class="search_bar__input" id="search_bar__input" placeholder="Поиск по сайту...">
@@ -95,44 +94,18 @@
     <main class="main main-catalog">
         <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item .blue-opacity"><a href="#" class="breadcrumbs__link">Главная</a></li>
-                <li class="breadcrumbs__item .blue-opacity">/</li>
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+                <li class="breadcrumbs__item blue-opacity"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item blue-opacity">/</li>
+                <li class="breadcrumbs__item blue-opacity"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+                <li class="breadcrumbs__item">/</li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Смесители</a></li>
             </ul>
         </div>
-        <h1 class="catalog-main-title">Каталог</h1>
-        <section class="catalog-categories">
-            <div class="catalog-categories__container">
-                <div class="category">
-                    <img src="./img/catalog_category_1.png" alt="смеситель" class="category__img">
-                    <span class="category__name">Смесители</span>
-                    <span class="category__goods-count">Товаров: 370</span>
-                </div>
-                <div class="category">
-                    <img src="./img/catalog_category_2.png" alt="душ" class="category__img">
-                    <span class="category__name">Душевые системы</span>
-                    <span class="category__goods-count">Товаров: 120</span>
-                </div>
-                <div class="category">
-                    <img src="./img/catalog_category_3.png" alt="душевая стойка" class="category__img">
-                    <span class="category__name">Душевые стойки</span>
-                    <span class="category__goods-count">Товаров: 146</span>
-                </div>
-                <div class="category">
-                    <img src="./img/catalog_category_4.png" alt="излив" class="category__img">
-                    <span class="category__name">Изливы</span>
-                    <span class="category__goods-count">Товаров: 88</span>
-                </div>
-                <div class="category">
-                    <img src="./img/catalog_category_5.png" alt="шланг" class="category__img">
-                    <span class="category__name">Аксессуары</span>
-                    <span class="category__goods-count">Товаров: 32</span>
-                </div>
-            </div>
-        </section>
+        <h1 class="catalog-main-title">Смесители</h1>
         <section class="catalog-listing">
             <div class="filters">
                 <ul class="filters__list">
+                    <li class="filters__item  product-count"> Товаров: 370</li>
                     <li class="filters__item with-inner-menu">
                         <div class="filters__name"><span>Коллекция</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
                         <ul class="inner-listing__list">
@@ -172,19 +145,19 @@
                         <div class="filters__name"><span>Стиль</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
                         <ul class="inner-listing__list">
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="kitchen" name="kitchen"/><label for="kitchen">Кухонный</label>
+                                <input type="checkbox" id="kitchen" name="kitchen"/><label for="kitchen">Кухонный<span class="products_count">(19)</span></label>
                             </li>
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="bathroom" name="bathroom"/><label for="bathroom">Для ванны</label>
+                                <input type="checkbox" id="bathroom" name="bathroom"/><label for="bathroom">Для ванны<span class="products_count">(19)</span></label>
                             </li>
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="valve" name="valve"/><label for="valve">Вентильный</label>
+                                <input type="checkbox" id="valve" name="valve"/><label for="valve">Вентильный<span class="products_count">(19)</span></label>
                             </li>
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="cascade" name="cascade"/><label for="cascade">Каскадные</label>
+                                <input type="checkbox" id="cascade" name="cascade"/><label for="cascade">Каскадные<span class="products_count">(19)</span></label>
                             </li>
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="single-lever" name="single-lever"/><label for="single-lever">Однорычажные </label>
+                                <input type="checkbox" id="single-lever" name="single-lever"/><label for="single-lever">Однорычажные<span class="products_count">(19)</span></label>
                             </li>
                         </ul>
                     </li>
@@ -192,16 +165,123 @@
                         <div class="filters__name"><span>Цвет</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
                         <ul class="inner-listing__list">
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="hrom" name="hrom"/><label for="hrom">Хром</label>
+                                <input type="checkbox" id="hrom" name="hrom"/><label for="hrom">Хром<span class="products_count">(19)</span></label>
                             </li>
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="gold" name="gold"/><label for="gold">Золото</label>
+                                <input type="checkbox" id="gold" name="gold"/><label for="gold">Золото<span class="products_count">(19)</span></label>
                             </li>
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="bronze" name="bronze"/><label for="bronze">Бронза</label>
+                                <input type="checkbox" id="bronze" name="bronze"/><label for="bronze">Бронза<span class="products_count">(19)</span></label>
                             </li>
                             <li class="inner-listing__items">
-                                <input type="checkbox" id="black" name="black"/><label for="bronze">Черный</label>
+                                <input type="checkbox" id="black" name="black"/><label for="bronze">Черный<span class="products_count">(19)</span></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__item with-inner-menu">
+                        <div class="filters__name"><span>Вид</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
+                        <ul class="inner-listing__list">
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="kitchen1" name="kitchen"/><label for="kitchen">Кухонный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="bathroom1" name="bathroom"/><label for="bathroom">Для ванны<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="valve1" name="valve"/><label for="valve">Вентильный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="cascade1" name="cascade"/><label for="cascade">Каскадные<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="single-lever1" name="single-lever"/><label for="single-lever">Однорычажные<span class="products_count">(19)</span></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__item with-inner-menu">
+                        <div class="filters__name"><span>Тип монтажа</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
+                        <ul class="inner-listing__list">
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-1" name="holes-number-1"/><label for="holes-number-1">На 1 отверстие<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-2" name="holes-number-2"/><label for="holes-number-2">На 2 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-3" name="holes-number-3"/><label for="holes-number-3">На 3 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-4" name="holes-number-4"/><label for="holes-number-4">На 4 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-table" name="on-table"/><label for="on-table">Настольный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="Built-in" name="Built-in"/><label for="Built-in">Встраиваемый<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-wall" name="on-wall"/><label for="on-wall">Настенный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-floor" name="on-floor"/><label for="on-floor">Напольный<span class="products_count">(19)</span></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__item with-inner-menu">
+                        <div class="filters__name"><span>Управление</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
+                        <ul class="inner-listing__list">
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-11" name="holes-number-1"/><label for="holes-number-1">На 1 отверстие<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-21" name="holes-number-2"/><label for="holes-number-2">На 2 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-31" name="holes-number-3"/><label for="holes-number-3">На 3 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-41" name="holes-number-4"/><label for="holes-number-4">На 4 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-table1" name="on-table"/><label for="on-table">Настольный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="Built-in1" name="Built-in"/><label for="Built-in">Встраиваемый<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-wall1" name="on-wall"/><label for="on-wall">Настенный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-floor1" name="on-floor"/><label for="on-floor">Напольный<span class="products_count">(19)</span></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="filters__item with-inner-menu">
+                        <div class="filters__name"><span>Количество источников </span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></div>
+                        <ul class="inner-listing__list">
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-12" name="holes-number-1"/><label for="holes-number-1">На 1 отверстие<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-22" name="holes-number-2"/><label for="holes-number-2">На 2 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-32" name="holes-number-3"/><label for="holes-number-3">На 3 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="holes-number-42" name="holes-number-4"/><label for="holes-number-4">На 4 отверстия<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-table2" name="on-table"/><label for="on-table">Настольный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="Built-in2" name="Built-in"/><label for="Built-in">Встраиваемый<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-wall2" name="on-wall"/><label for="on-wall">Настенный<span class="products_count">(19)</span></label>
+                            </li>
+                            <li class="inner-listing__items">
+                                <input type="checkbox" id="on-floor2" name="on-floor"/><label for="on-floor">Напольный<span class="products_count">(19)</span></label>
                             </li>
                         </ul>
                     </li>
@@ -226,9 +306,10 @@
             </div>
             <div class="products">
                 <div class="products__control">
-                    <button class="btn">Новинки</button>
-                    <button class="btn">Акционные товары</button>
-                    <button class="btn">Хиты продаж</button>
+                    <button class="btn">Дочерний раздел 1</button>
+                    <button class="btn">Дочерний раздел 2</button>
+                    <button class="btn">Дочерний раздел 3</button>
+                    <button class="btn">Дочерний раздел 4</button>
                     <span class="products__sorting">Сортировка <img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></span>
                 </div>
                 <div class="products__control-mobile">
@@ -237,6 +318,10 @@
                         <button class="btn"><span>Коллекция</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
                         <button class="btn"><span>Стиль </span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
                         <button class="btn"><span>Цвет</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Вид</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Тип монтажа</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Управление</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
+                        <button class="btn"><span>Количество источников</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
                         <button class="btn"><span>Цена, руб.</span><img src="./icons/arrow_top_ico.svg" alt="стрелка" class="arrow"></button>
                     </div>
                     <div class="control-mobile__bottom">

@@ -6,8 +6,11 @@
         flex-direction: row;
         list-style: none;
     }
-    &__item{
+    &__link{
+        text-decoration: none;
         color: $color-blue;
+    }
+    &__item{
         font-size: rem(15px);
         line-height: 135%;
         &:not(:last-child){

@@ -1,7 +1,26 @@
 $(document).ready(function() {
-    slideOne();
-    slideTwo();
-
+    if($(".collection>.carousel")){
+        $(".collection>.carousel").slick({
+            dots: true,
+            slidesToShow:4,
+            nextArrow:$(".collection>.btn__arrow-right"),
+            prevArrow:$(".collection>.btn__arrow-left"),
+            slidesToScroll: 2,
+        });
+    }
+    if($(".add-products>.carousel")){
+        $(".add-products>.carousel").slick({
+            dots: true,
+            slidesToShow:4,
+            nextArrow:$(".add-products>.btn__arrow-right"),
+            prevArrow:$(".add-products>.btn__arrow-left"),
+            slidesToScroll: 1,
+        });
+    }
+    if(document.getElementById("slider-1")){
+        slideOne();
+        slideTwo();
+    }
 
 
     ///burger menu
@@ -30,7 +49,7 @@ $(document).ready(function() {
         const $arrow = $(this).find(".arrow");
         $innerMenuName.on("click",function(){
             if($innerMenu){
-                $innerMenu.toggle(1000)
+                $innerMenu.toggle(500)
                 $arrow.toggleClass("rotate")
             }
         })
@@ -73,30 +92,32 @@ $(document).ready(function() {
 
 
     ///range slider on catalog
-    let sliderOne = document.getElementById("slider-1");
-    let sliderTwo = document.getElementById("slider-2");
-    let displayValOne = document.getElementById("range1");
-    let displayValTwo = document.getElementById("range2");
-    let minGap = 0;
-    let sliderTrack = document.querySelector(".slider-track");
-    let sliderMaxValue = document.getElementById("slider-1").max;
+    if(document.getElementById("slider-1")){
+        let sliderOne = document.getElementById("slider-1");
+        let sliderTwo = document.getElementById("slider-2");
+        let displayValOne = document.getElementById("range1");
+        let displayValTwo = document.getElementById("range2");
+        let minGap = 0;
+        let sliderTrack = document.querySelector(".slider-track");
+        let sliderMaxValue = document.getElementById("slider-1").max;
 
-    function slideOne() {
-    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-        sliderOne.value = parseInt(sliderTwo.value) - minGap;
-    }
-    displayValOne.value = sliderOne.value;
-    fillColor();
-    }
-    function slideTwo() {
-    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-        sliderTwo.value = parseInt(sliderOne.value) + minGap;
-    }
-    displayValTwo.value = sliderTwo.value;
-    fillColor();
-    }
-    function fillColor() {
-    percent1 = (sliderOne.value / sliderMaxValue) * 100;
-    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , rgba(33, 63, 116, 1) ${percent1}% , rgba(33, 63, 116, 1) ${percent2}%, #dadae5 ${percent2}%)`;
+        function slideOne() {
+        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+            sliderOne.value = parseInt(sliderTwo.value) - minGap;
+        }
+        displayValOne.value = sliderOne.value;
+        fillColor();
+        }
+        function slideTwo() {
+        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+            sliderTwo.value = parseInt(sliderOne.value) + minGap;
+        }
+        displayValTwo.value = sliderTwo.value;
+        fillColor();
+        }
+        function fillColor() {
+        percent1 = (sliderOne.value / sliderMaxValue) * 100;
+        percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+        sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , rgba(33, 63, 116, 1) ${percent1}% , rgba(33, 63, 116, 1) ${percent2}%, #dadae5 ${percent2}%)`;
+        }
     }
